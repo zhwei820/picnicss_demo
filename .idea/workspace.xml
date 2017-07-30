@@ -15,9 +15,8 @@
       <file leaf-file-name="demo.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="788" column="30" lean-forward="false" selection-start-line="788" selection-start-column="30" selection-end-line="788" selection-end-column="30" />
-              <caret line="806" column="31" lean-forward="false" selection-start-line="806" selection-start-column="31" selection-end-line="806" selection-end-column="31" />
+            <state relative-caret-position="820">
+              <caret line="281" column="0" lean-forward="false" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#label#0;n#div#0;n#div#6;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#14;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -69,6 +68,7 @@
       <find>60</find>
       <find>class=&quot;label</find>
       <find>tabC-1</find>
+      <find>toggle</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -473,9 +473,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="788" column="30" lean-forward="false" selection-start-line="788" selection-start-column="30" selection-end-line="788" selection-end-column="30" />
-          <caret line="806" column="31" lean-forward="false" selection-start-line="806" selection-start-column="31" selection-end-line="806" selection-end-column="31" />
+        <state relative-caret-position="820">
+          <caret line="281" column="0" lean-forward="false" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#label#0;n#div#0;n#div#6;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#14;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
