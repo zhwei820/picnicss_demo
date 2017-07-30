@@ -1,1 +1,0 @@
-# picnicss_demo
