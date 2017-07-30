@@ -36,16 +36,54 @@
         a.top.visible {
             font-size: 1em;
         }
+
+        .myCoolButton {
+            background: green;
+        }
+
+        .mainButton {
+            font-size: 1.5em;
+        }
+
+        .shyButton {
+            font-size: .75em;
+        }
+
+        .miniprofile {
+            border-radius: 50%; /* Make it a circle */
+            margin: 0 auto; /* Center horizontally */
+            width: 30%; /* 60% width */
+            height: 100px;
+            padding-bottom: 30%; /* 60% height */
+        }
+
+        .flex.demo > * > * {
+            display: block;
+            padding: .3em 0;
+            background: #2ecc40;
+            text-align: center;
+        }
+
+        .flex.demo > *:nth-child(2n) > * {
+            background: #7fdbff;
+        }
     </style>
 
 </head>
 
 <body>
 <nav>
-    <a href="/" class="brand"><span>Picnic CSS</span></a><input id="bmenu" type="checkbox" class="show"><label
-        for="bmenu"
-        class="burger toggle pseudo button">menu</label>
-    <div class="menu"><a href="/tests" class="pseudo button icon-help-circled">Test</a>
+    <a href="/" class="brand">
+        <img class="logo" src="img/basket.png"/>
+        <span>Picnic CSS</span>
+    </a>
+
+    <input id="bmenu" type="checkbox" class="show">
+    <label for="bmenu" class="burger toggle pseudo button">&#9776;</label>
+
+
+    <div class="menu">
+        <a href="/tests" class="pseudo button icon-help-circled">Test</a>
         <a href="https://github.com/franciscop/picnic" target="_blank"
            class="pseudo button icon-g">GitHub</a>
         <a href="/documentation"
@@ -718,7 +756,61 @@
         </button>
     </p>
 
+
+    <button class="myCoolButton">My Cool Button</button>
+    <br>
+    <button class="mainButton">Large button</button>
+    <br>
+    <button>Normal button</button>
+    <br>
+    <button class="shyButton">Small button</button>
+
+
+    <div>
+        <label class="dropimage miniprofile half">
+            <input name="filea" title="Drop image or click me" type="file">
+        </label>
+    </div>
+
+
+    <div class="flex three center demo">
+        <div><span>1</span></div>
+        <div><span>2</span></div>
+        <div><span>3</span></div>
+        <div><span>4</span></div>
+        <div><span>5</span></div>
+    </div>
+
+
+    <div>
+        <div class="tabs four">
+            <input id="tabC-10" type="radio" name="tabGroupC" checked="">
+            <input id="tabC-20" type="radio" name="tabGroupC">
+            <input id="tabC-30" type="radio" name="tabGroupC">
+            <input id="tabC-4" type="radio" name="tabGroupC">
+            <div class="row">
+                <div>
+                    <img src="img/forest.jpg">
+                </div>
+                <div>
+                    <img src="img/lake.jpg">
+                </div>
+                <div>
+                    <img src="img/halong.jpg">
+                </div>
+                <div>
+                    <img src="img/balloon.jpg">
+                </div>
+            </div>
+            <label for="tabC-10"><img src="web/img/forest.jpg"></label>
+            <label for="tabC-20"><img src="web/img/lake.jpg"></label>
+            <label for="tabC-30"><img src="web/img/halong.jpg"></label>
+            <label for="tabC-4"><img src="web/img/balloon.jpg"></label>
+        </div>
+    </div>
+
 </main>
+
 
 <a href="#home" tabindex="-1" class="top button ">▲</a>
 
@@ -732,7 +824,6 @@
 
     $([window]).on('scroll', function () {
         var top = this.scrollY || document.documentElement.scrollTop;
-        console.log(top)
         $('.top').toggleClass('visible', top > 1000);
     }).trigger('scroll');
 
