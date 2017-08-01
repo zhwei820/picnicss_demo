@@ -36,3 +36,8 @@
 tr:hover {
     background: silver;
 }
+
+.modal > * {
+    min-width: 768px;
+    padding: 0.5em !important;
+}
